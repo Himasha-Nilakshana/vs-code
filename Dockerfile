@@ -31,7 +31,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install Python & Pip
 RUN sudo apt install software-properties-common -y
-RUN sudo add-apt-repository ppa:deadsnakes/ppa
+RUN sudo add-apt-repository ppa:mc3man/xerus-media
 RUN sudo apt-get update   
 RUN sudo apt install python3.9 python3-pip
 RUN sudo apt install python3-pip
