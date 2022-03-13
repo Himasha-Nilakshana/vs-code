@@ -27,13 +27,14 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN code-server --install-extension esbenp.prettier-vscode
 
 # Install apt packages:
-RUN sudo apt-get install -y ubuntu-make
+# RUN sudo apt-get install -y ubuntu-make
 
 # Install Python & Pip
 RUN sudo apt-get install python3.9 python3-pip
 RUN sudo apt install python3-pip
 RUN pip3 install -U pip
 RUN pip3 install --no-cache-dir -U -r requirements.txt
+RUN sudo python3 -m pip install --user virtualenv
 
 # Copy files: 
 COPY deploy-container/myTool /home/coder/myTool
