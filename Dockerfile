@@ -35,7 +35,7 @@ RUN pip3 install -U pip
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 # Copy files: 
-# COPY deploy-container/myTool /home/coder/myTool
+COPY deploy-container/myTool /home/coder/myTool
 
 # -----------
 
