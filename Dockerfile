@@ -34,11 +34,7 @@ RUN sudo apt install software-properties-common -y
 RUN sudo apt install build-essential zlib1g-dev \
 libncurses5-dev libgdbm-dev libnss3-dev \
 libssl-dev libreadline-dev libffi-dev curl software-properties-common -y
-RUN wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tar.xz
-RUN tar -xf Python-3.9.0.tar.xz
-RUN cd Python-3.9.0
-RUN ./configure
-RUN sudo make altinstall
+RUN python3.9 --version
 RUN sudo apt install python3-pip
 RUN pip3 install -U pip
 RUN pip3 install --no-cache-dir -U -r requirements.txt
