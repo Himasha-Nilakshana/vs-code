@@ -37,7 +37,6 @@ libssl-dev libreadline-dev libffi-dev curl software-properties-common -y
 RUN python3 --version
 RUN sudo apt install python3-pip -y
 RUN pip3 install -U pip
-RUN pip3 install --no-cache-dir -U -r requirements.txt
 RUN sudo python3 -m pip install --user virtualenv
 
 # Copy files: 
