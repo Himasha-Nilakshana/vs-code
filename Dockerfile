@@ -30,6 +30,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN sudo apt-get install -y ubuntu-make
 
 # Install Python & Pip
+RUN sudo apt install software-properties-common
+RUN sudo add-apt-repository ppa:deadsnakes/ppa
 RUN sudo apt install python3.9 python3-pip
 RUN sudo apt install python3-pip
 RUN pip3 install -U pip
