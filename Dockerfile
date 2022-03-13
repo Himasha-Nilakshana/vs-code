@@ -34,7 +34,7 @@ RUN sudo apt install software-properties-common -y
 RUN sudo apt install build-essential zlib1g-dev \
 libncurses5-dev libgdbm-dev libnss3-dev \
 libssl-dev libreadline-dev libffi-dev curl software-properties-common -y
-RUN python3.9 --version
+RUN python3 --version
 RUN sudo apt install python3-pip
 RUN pip3 install -U pip
 RUN pip3 install --no-cache-dir -U -r requirements.txt
