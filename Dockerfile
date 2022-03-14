@@ -29,7 +29,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 
-# Install Python & Pip
+# Install Python & Pip 3
 RUN sudo apt install software-properties-common -y
 RUN sudo apt install build-essential zlib1g-dev \
 libncurses5-dev libgdbm-dev libnss3-dev \
